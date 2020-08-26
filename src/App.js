@@ -33,7 +33,11 @@ function App() {
 
   return (
     <div className="App">
-      <input type="file" ref={inputFileElement} accept="jpg" />
+      <input
+        type="file"
+        ref={inputFileElement}
+        accept="image/png, image/jpeg"
+      />
       <button onClick={handleUploadClick}>Upload</button>
     </div>
   );
